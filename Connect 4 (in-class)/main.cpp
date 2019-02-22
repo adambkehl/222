@@ -1,7 +1,7 @@
 //Connect 4 main.cpp
 //By Daniel Ostermiller
  
-#include "Connect4.h"
+#include "connect4.h"
  
 int main(int args, char *argv[]) {
     int ply = 1;
