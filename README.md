@@ -1,2 +1,2 @@
-# 222
-C++ 222 Class Code
+# CSCI 222
+In-class code
