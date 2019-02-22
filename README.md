@@ -5,4 +5,4 @@
 * [Reading in a text file](Sudoku)
 
 ### Outside Links
-v[Lab #2 Solution from Internet](https://fahad-cprogramming.blogspot.com/2017/02/payroll-management-system-project-c.html)
+* [Lab #2 Solution from Internet](https://fahad-cprogramming.blogspot.com/2017/02/payroll-management-system-project-c.html)
