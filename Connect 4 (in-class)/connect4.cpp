@@ -1,7 +1,7 @@
 //Connect 4 connect4.cpp
 //By Daniel Ostermiller
  
-#include "Connect4.h"
+#include "connect4.h"
  
 //clears the board memory to all 0
 void initBoard(int **board)
