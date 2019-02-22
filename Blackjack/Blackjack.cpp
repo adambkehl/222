@@ -9,8 +9,7 @@ int main() {
 		game.hit();
 		game.check_win();
 	}
-	cin.get();
-	cin.get();
+	cin.get(), cin.get();
 }
 
 Blackjack::Blackjack(){
