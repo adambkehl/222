@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	string words = "";
-	int vowels = 0, consonants = 0;
+	int vowels = 0, consonants = 0, others = 0;
 	char c;
 	cout << "Enter words (q to quit): ";
 	do {
@@ -17,11 +17,16 @@ int main() {
 				c == 'U')
 				vowels++;
 			else consonants++;
+		} else {
+			others++;
 		}
 	} while (words != "q");
 	consonants--;
 
-	cout << endl << "Vowels: " << vowels << endl << "Consonants: " << consonants << endl;
+	cout << endl
+		<< "Vowels: " << vowels << endl
+		<< "Consonants: " << consonants << endl
+		<< "Others: " << others << endl;
 
 	cin.get(), cin.get();
 }
