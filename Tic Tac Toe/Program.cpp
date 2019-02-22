@@ -3,15 +3,13 @@
 #include "tictactoe.h"
 using namespace std;
 
-int main()
-{
+int main() {
 	int board[3][3]; //board to hold moves
 	int current_player = 1; //player whose turn it is
 	init_board(board);
 	int x = -1, y = -1;
 
-	while (!game_over(board, x, y))
-	{
+	while (!game_over(board, x, y))	{
 		
 		get_move(&x, &y);
 		update(board, x, y, current_player);
