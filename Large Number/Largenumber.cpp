@@ -51,6 +51,12 @@ int Largenumber::length(int const number) const {
 Largenumber Largenumber::operator+(Largenumber const &number) {
 	int carry = 0, sum;
 	Largenumber temp((float)(MAX(size, number.size)));
+
+	for (int i = 0; i < MIN(size, number.size); i++) {
+		sum = *(thenumber + i) + *(number.thenumber + i) + carry;
+		*(temp.thenumber + i) = sum % 10;
+		carry = sum / 10;
+	}
 	//in progress...
 }
 
