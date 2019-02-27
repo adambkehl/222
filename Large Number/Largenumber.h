@@ -12,10 +12,11 @@ private:
 public:
 	Largenumber();
 	Largenumber(int);
+	Largenumber(float);
 	Largenumber(char const *);
 	~Largenumber();
 	Largenumber(Largenumber const &); //copy constructor
-	Largenumber &operator+(Largenumber const &);
+	Largenumber operator+(Largenumber const &);
 	Largenumber &operator-(Largenumber const &);
 	Largenumber &operator++();
 	Largenumber &operator++(int);
