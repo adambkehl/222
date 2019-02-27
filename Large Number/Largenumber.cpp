@@ -48,6 +48,8 @@ int Largenumber::length(int const number) const {
 	return length_of_number;
 }
 
-//Largenumber &operator+(Largenumber const &number) {
-
-//}
+Largenumber & Largenumber::operator+(Largenumber const &number) {
+	int carry = 0;
+	int sum;
+	//working on...
+}
