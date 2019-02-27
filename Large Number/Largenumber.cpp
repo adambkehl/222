@@ -48,10 +48,16 @@ int Largenumber::length(int const number) const {
 	return length_of_number;
 }
 
-Largenumber & Largenumber::operator+(Largenumber const &number) {
+Largenumber Largenumber::operator+(Largenumber const &number) {
 	int carry = 0, sum;
+	Largenumber temp((float)(MIN(size, number.size)));
+	//in progress...
+}
 
-	for (int i = 0; i < MIN(size, number.size); i++) {
-
+Largenumber::Largenumber(float number) {
+	size = (int)(number);
+	thenumber = new int[size];
+	for (int i = 0; i < size; i++) {
+		*(thenumber + i) = 0;
 	}
 }
