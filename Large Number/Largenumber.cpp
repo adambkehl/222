@@ -1,5 +1,9 @@
 #include "Largenumber.h"
 
+int main() {
+	return 0;
+}
+
 Largenumber::Largenumber() {
 	thenumber = new int[1];
 	*thenumber = 0; // thenumber[0] = 0;
