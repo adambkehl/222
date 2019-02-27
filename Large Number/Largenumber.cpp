@@ -50,7 +50,7 @@ int Largenumber::length(int const number) const {
 
 Largenumber Largenumber::operator+(Largenumber const &number) {
 	int carry = 0, sum;
-	Largenumber temp((float)(MIN(size, number.size)));
+	Largenumber temp((float)(MAX(size, number.size)));
 	//in progress...
 }
 
