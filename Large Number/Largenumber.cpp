@@ -97,3 +97,44 @@ Largenumber::Largenumber(float number) {
 		*(thenumber + i) = 0;
 	}
 }
+
+bool Largenumber::operator!=(Largenumber const & number) const {
+	if (size != number.size) return true;
+	else {
+		for (int i = 0; i < size; i++) {
+			if (thenumber[i] != number.thenumber[i]) return true;
+		}
+	}
+	return false;
+}
+
+bool Largenumber::operator==(Largenumber const &number) const {
+	if (size != number.size) return false;
+	else {
+		for (int i = 0; i < size; i++) {
+			if (thenumber[i] != number.thenumber[i]) return false;
+		}
+	}
+	return true;
+}
+
+Largenumber Largenumber::operator=(Largenumber const &number) {
+	if (*this != number) {
+		delete[] thenumber;
+		size = number.size;
+		thenumber = new int[size];
+		for (int i = 0; i < size; i++) {
+			thenumber[i] = number.thenumber[i];
+		}
+	}
+	return *this;
+}
+/*
+ostream &(ostream & stream, Largenumber const &number) {
+	for (int i = number.size - 1; i >= 0; i--) {
+		stream << number.thenumber[i];
+	}
+	stream << endl;
+	return stream;
+}
+*/
