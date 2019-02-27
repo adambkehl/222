@@ -29,3 +29,25 @@ Largenumber::Largenumber(char const * num) {
 Largenumber::~Largenumber() {
 	delete[] thenumber;
 }
+
+Largenumber::Largenumber(Largenumber const & number) {
+	size = number.size;
+	thenumber = new int[size];
+	for (int i = 0; i < size; i++) {
+		*(thenumber + i) = *(number.thenumber + i);
+	}
+}
+
+int Largenumber::length(int const number) const {
+	int tempNumber = number;
+	int length_of_number = 0;
+	while (tempNumber != 0) {
+		tempNumber /= 10;
+		length_of_number++;
+	}
+	return length_of_number;
+}
+
+//Largenumber &operator+(Largenumber const &number) {
+
+//}
