@@ -74,8 +74,16 @@ Largenumber Largenumber::operator+(Largenumber const &number) {
 		}
 	}
 
-
-	//in progress...
+	if (carry == 0) {
+		return result;
+	} else {
+		Largenumber resized_number = ((float)(result.size + 1));
+		for (int i = 0; i < result.size; i++) {
+			*(resized_number.thenumber + i) = *(resized_number.thenumber + i);
+			*(resized_number.thenumber + result.size) = carry;
+		}
+		return resized_number;
+	}
 }
 
 Largenumber::Largenumber(float number) {
