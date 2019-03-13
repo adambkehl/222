@@ -12,9 +12,11 @@ public:
 private:
 	Type data;
 	vector <float> weights;
-	vector <*Node<Type>> edge;
+	vector <Node<Type>*> edge;
 	Type getdata();
 	void setdata(Type);
 	vector <float> getweight();
 	void setweight(vector<float>);
+	void setedge(vector<Node<Type>*>);
+	vector <Node<Type>*> getedge();
 };
